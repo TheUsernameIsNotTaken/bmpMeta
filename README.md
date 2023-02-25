@@ -1,5 +1,5 @@
-# bmpMeta
-Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c application.
+# Bmp metadata decoding and encoding app
+Read me file for the EncodeProject.c application.
 
 ## 1. About the program:
    This program can decode text messages, which was encoded into bmp images.
