@@ -71,17 +71,13 @@ Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c app
      Encodes one char into one bmp pixel.
      Encoding logic: encodes a single char's 1st 1/3 into the 1st, 2nd into the 2nd and 3rd into the 3rd color of the pixel (always using the last 3 bits).
      - Parameters:
-	```
-	- caracter (in) :	The caracter what we want to encode into the pixel.
-	- pixelArray (out) :	A pointer to the start of the pixel's data we want to encode.
-	```
+       - `caracter (in)` :	The caracter what we want to encode into the pixel.
+       - `pixelArray (out)` :	A pointer to the start of the pixel's data we want to encode.
    - TestArray method:
      Creates a random test array of pixels with an already encoded 'abc' message.
      - Parameters:
-       ```
-       - NumCh (out) :		An int pointer where the method saves the number of encoded caracters.
-       - return :		An int pointer of the generated test array.
-       ```
+       - `NumCh (out)` :	An int pointer where the method saves the number of encoded caracters.
+       - `return` :		An int pointer of the generated test array.
    - Unwrap method:
      Decodes an already encoded pixel array by the same logic what is definied in the encode_pixel method.
      - Parameters:
@@ -90,28 +86,28 @@ Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c app
        - `@return` :		The decoded text message's start pointer.
 
    - ReadPixels method:
-		Opens a bmp file's data and gets it's pixel array and the # of encoded caracters.
-			--> Parameters:
-				- f (in) :		The opened filestream of the encoded bmp image.
-				- NumCh (out) :		A pointer, where the function saves the # of encoded caracters.
-				- return :		The pixel array of the bmp image.
+     Opens a bmp file's data and gets it's pixel array and the # of encoded caracters.
+     - Parameters:
+       - `f (in)` :		The opened filestream of the encoded bmp image.
+       - `NumCh (out)` :	A pointer, where the function saves the # of encoded caracters.
+       - `return` :		The pixel array of the bmp image.
     - BrowseForOpen method:
-		A method, what creates a Terminal File browser.
-		If the input is a Folder, then it opens it, and writes out the folder's content.
-		The browsing starts at the user's home folder. And ends if the user gives a file as an input.
-		If the file or folder name is not found, it stays in the current directory.
-		You can go to a parent folder with the '..' "command".
-			--> Parameters:
-				- return :		A readonly filestream of the chosen file.
+      A method, what creates a Terminal File browser.
+      - If the input is a Folder, then it opens it, and writes out the folder's content.
+      The browsing starts at the user's home folder. And ends if the user gives a file as an input.
+      - If the file or folder name is not found, it stays in the current directory.
+      - You can go to a parent folder with the `..` "command".
+      - Parameters:
+        - `return` :		A readonly filestream of the chosen file.
     - Post method:
-		Sends a HTML POST message, with the neptunID and message to the correct IP adress. This is the 
-			--> Parameters:
-				- neptunID (in) :	The user's neptunID. You will can find your message with the help of this ID.
-				- message (in) :	The message what you want to send to the server.
-				- NumCh (in) :		The length of the message.
-				- return :		Returns 0, if successfull.
-								Returns an error code in the range of 3-8 with the corresponding meaning.
-								In the case of error, this also writes out an error message into the standard error output.
+      Sends a HTML POST message, with the neptunID and message to the correct IP adress. This is the 
+      - Parameters:
+        - `neptunID (in)` :	The user's neptunID. You will can find your message with the help of this ID.
+        - `message (in)` :	The message what you want to send to the server.
+        - `NumCh (in)` :	The length of the message.
+        - `return` :		Returns 0, if successfull.
+        			Returns an error code in the range of 3-8 with the corresponding meaning.
+				In the case of error, this also writes out an error message into the standard error output.
     - WhatToDo method:
 		This function catches the SIGINT and SIGALRM signals.
 		In the case of a SIGINT signal the procces starts a child procces (with forking), which reminds the user,
