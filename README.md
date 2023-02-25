@@ -24,9 +24,7 @@ Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c app
 	  gcc EncodedProject.c -o EncodedProjectApp -fopenmp
 	  ```
      ### 3. Use the following command to run the program:
-          ```
-         ./EncodedProjectApp
-	  ```
+          ```./EncodedProjectApp```
 	  You can also use arguments to run the program not just in the standard mode.
 	  See more information in the 3rd paragraph.
 
