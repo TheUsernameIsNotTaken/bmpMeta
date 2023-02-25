@@ -15,34 +15,30 @@ Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c app
    - Do the following things to make the app runnable, if you not familiar with it:
      ### 1.	Open a Terminal in the folder where you have the EncodedProject.c file.
         > For this a dedicated folder is recommended.
-     ### 2.a Use the following command if you DON'T want multi-thread support:
-	  ```
-	  gcc EncodedProject.c -o EncodedProjectApp
-	  ```
-     ### 2.b Use the following command if you want multi-thread support:
-	  ```
-	  gcc EncodedProject.c -o EncodedProjectApp -fopenmp
-	  ```
+     ### 2. Use one of the following command:
+        #### a. Use the following command if you **DON'T** want multi-thread support:
+	  ```gcc EncodedProject.c -o EncodedProjectApp```
+        #### b Use the following command if you want multi-thread support:
+	  ```gcc EncodedProject.c -o EncodedProjectApp -fopenmp```
      ### 3. Use the following command to run the program:
           ```./EncodedProjectApp```
 	  You can also use arguments to run the program not just in the standard mode.
 	  See more information in the 3rd paragraph.
-
-3., How to use the program?
-	The program won't stop if you press Ctrl+C during the data decoding proccess. Please keep this in mind.
-	The program also tries to avoid infinite loops with timeouts.
-	You can run the program in different modes. These are:
-	- Normal mode: Without argument
-			In this mode the program decodes an encoded bmp image.
-			The program will open a command line file expoler at your home folder.
-			How the file explorer works?
-				-->	If the input is a Folder, then it opens it, and writes out the folder's content.
-					The browsing starts at the user's home folder.
-					The browsing ends if the user gives a file as an input.
-					If the file or folder name is not found, it stays in the current directory.
-		You can go to a parent folder with the '..' "command".
-	- Normal mode: With one argument - '[path_to_the_encoded_image]'
-			In this mode the program decodes an encoded bmp image.
+ ## 3. How to use the program?
+   The program won't stop if you press Ctrl+C during the data decoding proccess. Please keep this in mind.
+   The program also tries to avoid infinite loops with timeouts.
+   You can run the program in different modes. These are:
+ ### - Normal mode: Without argument
+ In this mode the program decodes an encoded bmp image.
+ The program will open a command line file expoler at your home folder.
+ How the file explorer works?
+ >	If the input is a Folder, then it opens it, and writes out the folder's content.
+	The browsing starts at the user's home folder.
+	The browsing ends if the user gives a file as an input.
+	If the file or folder name is not found, it stays in the current directory.
+	You can go to a parent folder with the `..` "command".
+ ### - Normal mode: With one argument - `[path_to_the_encoded_image]`
+ In this mode the program decodes an encoded bmp image.
 			The program reads the only parameter as the chosen file's path.
 			This path has to be either relative path from the app's run directory or an absolute path.
 			Make sure to give the right path for a succesfull decoding.
