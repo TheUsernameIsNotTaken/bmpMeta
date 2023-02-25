@@ -1,17 +1,17 @@
 # bmpMeta
 Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c application.
 
-1., About the program:
-	This program can decode text messages, which was encoded into bmp images.
-	After that it sends the text message to a server with a specified id.
-	You can also use this program in other modes. You can learn more about these at the 3rd paragraph.
-	Please use bmp files for the correct software usage.
+## 1. About the program:
+   This program can decode text messages, which was encoded into bmp images.
+   After that it sends the text message to a server with a specified id.
+   You can also use this program in other modes. You can learn more about these at the 3rd paragraph.
+   Please use bmp files for the correct software usage.
 
-2., How to make the app runnable?
+## 2. How to make the app runnable?
 	- To use the program you will need gcc to compile it to your computer.
 	- You can use the following gcc switchhes:
-		-->	'-fopenmp' to enable Multi-thread support.
-		-->	'-o' to set the compiled file's name. 	
+		-->	`-fopenmp` to enable Multi-thread support.
+		-->	`-o` to set the compiled file's name. 	
 	- Do the following things to make the app runnable, if you not familiar with it:
 		I.,		Open a Terminal in the folder where you have the EncodedProject.c file.
 				For this a dedicated folder is recommended.
