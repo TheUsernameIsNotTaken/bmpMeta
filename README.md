@@ -105,17 +105,13 @@ Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c app
         - `neptunID (in)` :	The user's neptunID. You will can find your message with the help of this ID.
         - `message (in)` :	The message what you want to send to the server.
         - `NumCh (in)` :	The length of the message.
-        - `return` :		Returns 0, if successfull.
-        			Returns an error code in the range of 3-8 with the corresponding meaning.
-				In the case of error, this also writes out an error message into the standard error output.
+        - `return` :		Returns 0, if successfull. Returns an error code in the range of 3-8 with the corresponding meaning. In the case of error, this also writes out an error message into the standard error output.
     - WhatToDo method:
-		This function catches the SIGINT and SIGALRM signals.
-		In the case of a SIGINT signal the procces starts a child procces (with forking), which reminds the user,
-		that the program disabled the key combination. After that the it kills the proccess immediately.
-		In the case of a SIGALRM signal the procces creates a timeout error message and exits with a '9' error code.
-			--> Parameters:
-				- sig (in) :		The catched signal's identifier flag.
+      This function catches the SIGINT and SIGALRM signals.
+      In the case of a SIGINT signal the procces starts a child procces (with forking), which reminds the user, that the program disabled the key combination. After that the it kills the proccess immediately. In the case of a SIGALRM signal the procces creates a timeout error message and exits with a `9` error code.
+      - Parameters:
+        - `sig (in)` :		The catched signal's identifier flag.
    - char_to_binary_str method:
-		An extra char to binary text converter for displaying and debug purposes.
-			--> Parameters:
-				- a (in) :		The caracter what we want to convert to binary string.
+     An extra char to binary text converter for displaying and debug purposes.
+     - Parameters:
+       - `a (in)` :		The caracter what we want to convert to binary string.
