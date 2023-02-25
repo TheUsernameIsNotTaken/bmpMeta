@@ -8,21 +8,27 @@ Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c app
    Please use bmp files for the correct software usage.
 
 ## 2. How to make the app runnable?
-	- To use the program you will need gcc to compile it to your computer.
-	- You can use the following gcc switchhes:
-		-->	`-fopenmp` to enable Multi-thread support.
-		-->	`-o` to set the compiled file's name. 	
-	- Do the following things to make the app runnable, if you not familiar with it:
-		I.,		Open a Terminal in the folder where you have the EncodedProject.c file.
-				For this a dedicated folder is recommended.
-		II.a,	Use the following command if you DON'T want multi-thread support:
-					"gcc EncodedProject.c -o EncodedProjectApp"
-		II.b,	Use the following command if you want multi-thread support:
-					"gcc EncodedProject.c -o EncodedProjectApp -fopenmp"
-		III.,	Use the following command to run the program:
-					"./EncodedProjectApp"
-				You can also use arguments to run the program not just in the standard mode.
-				See more information in the 3rd paragraph.
+   - To use the program you will need gcc to compile it to your computer.
+   - You can use the following gcc switchhes:
+     - -->	`-fopenmp` to enable Multi-thread support.
+     - -->	`-o` to set the compiled file's name. 	
+   - Do the following things to make the app runnable, if you not familiar with it:
+     ### 1.	Open a Terminal in the folder where you have the EncodedProject.c file.
+        > For this a dedicated folder is recommended.
+     ### 2.a Use the following command if you DON'T want multi-thread support:
+	  ```
+	  gcc EncodedProject.c -o EncodedProjectApp
+	  ```
+     ### 2.b Use the following command if you want multi-thread support:
+	  ```
+	  gcc EncodedProject.c -o EncodedProjectApp -fopenmp
+	  ```
+     ### 3. Use the following command to run the program:
+          ```
+         ./EncodedProjectApp
+	  ```
+	  You can also use arguments to run the program not just in the standard mode.
+	  See more information in the 3rd paragraph.
 
 3., How to use the program?
 	The program won't stop if you press Ctrl+C during the data decoding proccess. Please keep this in mind.
