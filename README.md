@@ -29,34 +29,34 @@ Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c app
    The program also tries to avoid infinite loops with timeouts.
    You can run the program in different modes. These are:
  ### - Normal mode: Without argument
- In this mode the program decodes an encoded bmp image.
- The program will open a command line file expoler at your home folder.
- How the file explorer works?
- >	If the input is a Folder, then it opens it, and writes out the folder's content.
+   In this mode the program decodes an encoded bmp image.
+   The program will open a command line file expoler at your home folder.
+ #### How the file explorer works?
+        If the input is a Folder, then it opens it, and writes out the folder's content.
 	The browsing starts at the user's home folder.
 	The browsing ends if the user gives a file as an input.
 	If the file or folder name is not found, it stays in the current directory.
 	You can go to a parent folder with the `..` "command".
  ### - Normal mode: With one argument - `[path_to_the_encoded_image]`
- In this mode the program decodes an encoded bmp image.
-			The program reads the only parameter as the chosen file's path.
+     In this mode the program decodes an encoded bmp image.
+ The program reads the only parameter as the chosen file's path.
 			This path has to be either relative path from the app's run directory or an absolute path.
 			Make sure to give the right path for a succesfull decoding.
-	- Help mode: Argument: '--help'
+### - Help mode: Argument: `--help`
 			Gives you some instructions about the usable arguments.
-	- About mode: Argument: '--version'
+### - About mode: Argument: `--version`
 			Gives you some infromation about the software's actual version and it's creator.
-	- Test mode: Argument: '--test'
+### - Test mode: Argument: `--test`
 			This mode is for testing and presentation purposes.
 			Encode an 'abc' string into 3 randomly generated pixels and
 			show their decoded and enoded content.
 			Also sends this test string to the server with the correct ID.
-	- POST mode: Arguments: '--send [your_ID] [a_single_word_message]'
+### - POST mode: Arguments: `--send [your_ID] [a_single_word_message]`
 			This mode is for testing purposes. For example to test if we can reach the server or not.
 			We send a single word message to the server. This is given by the 3rd argument.
 			We send the HTML POST messafe with your chosen ID, what you have to set in the second argument.
 
-4.,	The meaning of return values:
+4.	The meaning of return values:
 	- 0:	The software's run finished without an error.
 	- 1:	The used file path in the argument did not lead to a file.
 	- 2:	The software's memory allocation was unsuccessful.
