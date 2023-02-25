@@ -15,12 +15,10 @@ Bmp metadata decoding and encoding app. Read me file for the EncodeProject.c app
 	- Do the following things to make the app runnable, if you not familiar with it:
 		I.,		Open a Terminal in the folder where you have the EncodedProject.c file.
 				For this a dedicated folder is recommended.
-		
 		II.a,	Use the following command if you DON'T want multi-thread support:
 					"gcc EncodedProject.c -o EncodedProjectApp"
 		II.b,	Use the following command if you want multi-thread support:
 					"gcc EncodedProject.c -o EncodedProjectApp -fopenmp"
-		
 		III.,	Use the following command to run the program:
 					"./EncodedProjectApp"
 				You can also use arguments to run the program not just in the standard mode.
